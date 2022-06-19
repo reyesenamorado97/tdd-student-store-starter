@@ -1,0 +1,105 @@
+.product-card {
+    height: 350px;
+    width: 250px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    border: solid 1px #e4e4e4;
+}
+
+.product-card .media {
+    height: 250px;
+    width: 100%;
+}
+
+.product-card .product-info {
+    flex: 1;
+    display: flex;
+    border-top: solid 1px #e4e4e4;
+}
+
+.product-card .media img {
+    height: 250px;
+    width: 248px;
+}
+
+.product-card .main-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 12px;
+}
+
+.product-card .main-info .product-name {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.product-card .main-info .product-price {
+    font-size: 14px;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.product-card .actions {
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.product-card .buttons {
+    width: 80px;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+
+.product-card .buttons button {
+    display: flex;
+    outline: none;
+    border: none;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+    max-height: fit-content;
+    max-width: fit-content;
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+}
+
+.product-card .buttons i {
+    width: 20px;
+    height: 20px;
+    border: solid 1px #00c385;
+    color: #00c385;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    margin: 10px 5px;
+
+}
