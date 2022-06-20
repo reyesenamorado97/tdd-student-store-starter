@@ -52,7 +52,7 @@ View Specific product on click (using routing)
 
 #### Stretch Features
 
-- [ ] User can click in the top navigation bar to scroll to the relevant section.
+- [x] User can click in the top navigation bar to scroll to the relevant section.
 - [ ] User sees a "not found" display when searching for a nonexistent product.
 - [ ] Create an endpoint for fetching all orders in the database, and an endpoint for serving an individual order based on its id.
 - [ ] Build a page in the UI that displays the list of all past orders and lets the user click on any individual order to take them to a more detailed page of the transaction.
