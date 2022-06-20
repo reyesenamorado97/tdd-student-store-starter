@@ -89,7 +89,7 @@ export default function App() {
               element={
                 <>
                   <Navbar />
-                  <Sidebar />
+                  <Sidebar handleOnToggle={handleOnToggle} isOpen={isOpen}/>
                   <ProductView/>
                   
                 </>
