@@ -307,3 +307,61 @@ The following specifications were met on the Express backend and the React front
         - **optional**:
           - [ ] `receipt` - text describing the order (what might go on a receipt)
       - [ ] It should then send a JSON response back to the client with the new purchase like so: `{ "purchase": purchase }`. The response should have a `201` status code for a resource created action.
+
+
+
+
+### Reflection
+Did the topics discussed in your labs prepare you to complete the assignment? Be specific, which features in your weekly assignment did you feel unprepared to complete?
+
+    I feel that the topics in our labs helped to a degree.
+    There were instances where I felt more information may have 
+    helped me complete part 1 faster like understanding how to use
+    the filter function more correctly. I understood where I had to 
+    use it, but did not understand that an array was being returned 
+    from an intially filetered array. I was getting type errors 
+    when I tried to output my product cards when searching
+    or filtering by category. I had to figure out that I needed
+    to map each object in that twice filtered array into
+    my product card component.
+
+If you had more time, what would you have done differently? Would you have added additional features? Changed the way your project responded to a particular event, etc.
+
+    I think I would have tried to complete the side bar.
+    The conditional class names were giving me an issue 
+    when I was filtering by category, now I have to use 
+    what I did there to figure out how to get my sidebar
+    to dispaly certain html elements when it is opened.
+    Another thing I would like to change is the 
+    website design. I strongly modeled it after the example
+    website because I didn't feel like I had the time
+    to come up with my own unique design.
+
+Reflect on your project demo, what went well? Were there things that maybe didn't go as planned? Did you notice something that your peer did that you would like to try next time?
+
+    There wasn't anything that I noticed a peer did that 
+    I would like to implement besides just being further
+    ahead. I wish I had my page's buttons working at the
+    time of the demo, but that just wasn't possible with 
+    my plan of attack on this project. Either way, I still
+    feel confident enough to implement what I need to, I
+    just hope time is on my side!
+
+Open-source libraries used
+Add any links to open-source libraries used in your project.
+
+https://www.pluralsight.com/guides/applying-classes-conditionally-react
+
+https://thewebdev.info/2021/10/14/how-to-make-an-area-unclickable-with-css/#:~:text=Conclusion,events%20CSS%20property%20to%20none%20.
+
+https://stackoverflow.com/questions/55556221/how-do-you-format-a-number-to-currency-when-using-react-native-expo
+
+
+
+Shout out
+Give a shout out to somebody from your cohort that especially helped you during your project. This can be a fellow peer, instructor, TA, mentor, etc.
+
+    I want to shoutout Jenny, Winson, and Katherin (POD 5)
+    for being excellent partners in this tough assignment. 
+    They helped answer my question for the twitter assignment
+    as well. I learned a lot from talking to them.
