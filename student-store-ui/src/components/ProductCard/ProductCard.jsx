@@ -13,10 +13,13 @@ export default function ProductCard({
 
         return `$${dollarCount.toFixed(2)}`
      }
-     
+    
 return (
     
     <div className="product-card">
+
+        
+
         <Link to={"/products/" + product.id}>
         <div className="media">
             { 

@@ -3,15 +3,17 @@ import   "./ProductGrid.css"
 
 export default function ProductGrid({products, searchText, category}) {
 
+    let finalProductsArray;
     return (
 
         <div id="Buy" className="product-grid">
+            
             <div className="content">
                 <h3>Best Selling Products</h3>
 
                 <div className="grid">
 
-                      { products.filter((product) => {
+                     { finalProductsArray = products.filter((product) => {
                          if (category == "food" && product.category == "food") {
                             return product
                         }
@@ -27,10 +29,11 @@ export default function ProductGrid({products, searchText, category}) {
                         else if (category == "all") {
                             return product
                       }       
-                        })
+                    })
                       
                       .filter((product) => {
 
+                        
                         if (searchText == "") {
 
                             return product
@@ -39,16 +42,36 @@ export default function ProductGrid({products, searchText, category}) {
 
                             return product
                         }
-                    }).map((product) => {
+
+                       
+                    }
+                     
+
+                    ).map((product) => {
+
+
                         return(
                             
+
                             <ProductCard
                                 product={product}
                                 key={product.id}
+
+                                
                             />
+
+
                         )
-                       })
+                       })   
+                                    
                   }
+
+                { !finalProductsArray.length ? (
+                    <div className="no-results">
+                         <p>No products available!</p>
+                    </div>
+                ) : ``}
+                  
                 </div>
             </div>
         </div>
