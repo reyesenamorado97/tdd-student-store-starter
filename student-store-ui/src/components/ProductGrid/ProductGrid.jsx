@@ -1,7 +1,18 @@
 import ProductCard from "../ProductCard/ProductCard"
 import   "./ProductGrid.css"
 
-export default function ProductGrid({products, searchText, category}) {
+export default function ProductGrid({
+    products, 
+    searchText, 
+    category, 
+    addToCart, 
+    removeFromCart,
+    quantity,
+    shoppingCart,
+    GetQuantity
+
+
+}) {
 
     let finalProductsArray;
     return (
@@ -42,22 +53,21 @@ export default function ProductGrid({products, searchText, category}) {
 
                             return product
                         }
-
-                       
                     }
-                     
-
+        
                     ).map((product) => {
 
 
                         return(
-                            
-
                             <ProductCard
                                 product={product}
                                 key={product.id}
+                                addToCart={addToCart}
+                                quantity={quantity}
+                                removeFromCart={removeFromCart}
+                                shoppingCart={shoppingCart}
+                                GetQuantity={GetQuantity}
 
-                                
                             />
 
 

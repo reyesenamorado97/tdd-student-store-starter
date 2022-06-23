@@ -7,7 +7,10 @@ import "./ProductView.css";
 import axios from "axios";
 
 export default function ProductView(
-    shoppingCart
+    quantity,
+    handleRemoveItemFromCart,
+    shoppingCart,
+    handleAddItemToCart
     ) {
         const [isFetching, setIsFetching] = useState(false)
         const [error, setError] = useState("Error!")
@@ -60,11 +63,11 @@ export default function ProductView(
                     </div>
                     <div className="actions2">
                         <div className="buttons2">
-                            <button className="add2">
-                                <i className="material-icons2">add</i>
+                            <button className="add2" onClick={() => handleAddItemToCart(productID)}>
+                                <i className="material-icons2" >add</i>
                             </button>
-                            <button className="remove2">
-                            <i className="material-icons2">remove</i>
+                            <button className="remove2" onClick={() => handleRemoveItemFromCart(productID)}>
+                            <i className="material-icons2" >remove</i>
                             </button>
 
                         </div>

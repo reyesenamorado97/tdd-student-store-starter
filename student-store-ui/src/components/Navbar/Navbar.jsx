@@ -3,9 +3,6 @@ import "./Navbar.css"
 import Logo from "../../assets/logo.webp";
 import {Link} from "react-router-dom";
 
-
-
-
 export default function Navbar() {
   console.log("loaded")
   return (
@@ -17,8 +14,6 @@ export default function Navbar() {
   <img className="logo" src={Logo} alt="Codepath" ></img>
 </Link>
 
-
-     
 
     
     <div className="socials">

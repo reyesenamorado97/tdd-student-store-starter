@@ -14,26 +14,34 @@ import "./Home.css"
 
 
 export default function Home( {
-  products, isFetching, searchText, handleOnSearchTextChange, category, setCategory
+  products,
+   isFetching,
+    searchText, 
+    handleOnSearchTextChange,
+     category,
+      setCategory,
+    addToCart,
+    removeFromCart,
+    quantity,
+    shoppingCart,
+    GetQuantity
+
+
+
 }){
 
+  // NAV routing
   const location = useLocation()
-
   useEffect(() => {
-
     if (location.hash) {
-
       const el = document.querySelector(location.hash)
-
-      if (el) {
-
-        el.scrollIntoView({ behavior: "smooth" })
-
+      if (evt) {
+        evt.scrollIntoView({ behavior: "smooth" })
       }
-
     }
-
   }, [location.hash])
+
+
 
   return (
 
@@ -52,8 +60,18 @@ setCategory={setCategory} >
     
 </Subbar>
 
-<ProductGrid  isFetching={isFetching} 
-  products={products} searchText={searchText} category={category}
+<ProductGrid  
+  isFetching={isFetching} 
+  products={products} 
+  searchText={searchText} 
+  category={category}
+  quantity={quantity}
+  addToCart={addToCart}
+  removeFromCart={removeFromCart}
+  shoppingCart={shoppingCart}
+  GetQuantity={GetQuantity}
+
+
   />
 
 <About>

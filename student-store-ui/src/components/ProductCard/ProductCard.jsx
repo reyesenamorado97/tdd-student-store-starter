@@ -5,7 +5,10 @@ export default function ProductCard({
     product,
     quantity,
     removeFromCart,
-    addToCart
+    addToCart,
+    shoppingCart,
+    GetQuantity
+
 }) {
 
     function pricingDisplay(price) {
@@ -13,14 +16,16 @@ export default function ProductCard({
 
         return `$${dollarCount.toFixed(2)}`
      }
-    
+
+
+
 return (
     
     <div className="product-card">
 
         
 
-        <Link to={"/products/" + product.id}>
+        <Link to={"/products/" + product.id} >
         <div className="media">
             { 
             
@@ -43,10 +48,14 @@ return (
 
             <div className="actions">
                 <div className="buttons">
-                    <i className="material-icons test" onClick={addToCart}>add</i>
+                    <i className="material-icons test" onClick={() => {addToCart(product.id); GetQuantity(product.id)}}>add</i>
 
-                    <i className="material-icons" onClick={removeFromCart}>remove</i>
+                    <i className="material-icons" onClick={() => {removeFromCart(product.id); GetQuantity(product.id)}}>remove</i>
                 </div>
+                <span className="quantity">
+                    <span className="amt">{quantity}</span>
+
+                </span>
 
             </div>
 
