@@ -1,23 +1,37 @@
 import {Link} from "react-router-dom"
+import { useState } from "react"
+
 import "./ProductCard.css"
 
 export default function ProductCard({
     product,
-    quantity,
     removeFromCart,
     addToCart,
     shoppingCart,
-    GetQuantity
+    GetQuantity,
+    setShoppingCart
 
 }) {
-
     function pricingDisplay(price) {
         let dollarCount = price 
 
         return `$${dollarCount.toFixed(2)}`
      }
 
+     var quantity
 
+var currentID
+     if (shoppingCart != null) {
+     shoppingCart.map((element) => {
+        if (element.itemId === product.id)
+        {
+currentID = element.itemId
+          quantity = element.quantity
+        }
+      })}
+
+
+     
 
 return (
     
@@ -48,13 +62,24 @@ return (
 
             <div className="actions">
                 <div className="buttons">
-                    <i className="material-icons test" onClick={() => {addToCart(product.id); GetQuantity(product.id)}}>add</i>
+                    <Link to="/">
+                    <i className="material-icons test" onClick={() => {
+                            
+                            addToCart(product.id); GetQuantity(product.id);
+ 
+                        }
+                    }>add</i>
+                    </Link>
+                    <Link to="/">
 
                     <i className="material-icons" onClick={() => {removeFromCart(product.id); GetQuantity(product.id)}}>remove</i>
+                    </Link>
+
                 </div>
                 <span className="quantity">
-                    <span className="amt">{quantity}</span>
-
+                    {currentID == product.id &&
+                    <span className="amt"> {quantity}</span>
+                    }
                 </span>
 
             </div>

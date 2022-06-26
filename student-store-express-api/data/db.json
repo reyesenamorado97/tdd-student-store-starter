@@ -145,5 +145,52 @@
       "price": 999.99
     }
   ],
-  "purchases": []
+  "purchases": [
+    {
+      "receiptID": 1,
+      "buyTime": "2022-06-26T18:07:23.073Z",
+      "user": {
+        "name": "",
+        "email": "reyesenamorado97@gmail.com"
+      },
+      "shoppingCart": [
+        {
+          "itemId": 1,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "receiptID": 2,
+      "buyTime": "2022-06-26T18:07:40.125Z",
+      "user": {
+        "name": "",
+        "email": "kjlk"
+      },
+      "shoppingCart": [
+        {
+          "itemId": 1,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "receiptID": 3,
+      "buyTime": "2022-06-26T18:33:45.064Z",
+      "user": {
+        "name": "Robert Reyes-Enamorado",
+        "email": "reyeskevin3005@gmail.com"
+      },
+      "shoppingCart": [
+        {
+          "itemId": 2,
+          "quantity": 1
+        },
+        {
+          "itemId": 3,
+          "quantity": 1
+        }
+      ]
+    }
+  ]
 }

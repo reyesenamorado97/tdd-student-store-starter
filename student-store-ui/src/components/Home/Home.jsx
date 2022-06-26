@@ -24,7 +24,8 @@ export default function Home( {
     removeFromCart,
     quantity,
     shoppingCart,
-    GetQuantity
+    GetQuantity,
+    setShoppingCart
 
 
 
@@ -34,7 +35,7 @@ export default function Home( {
   const location = useLocation()
   useEffect(() => {
     if (location.hash) {
-      const el = document.querySelector(location.hash)
+      const evt = document.querySelector(location.hash)
       if (evt) {
         evt.scrollIntoView({ behavior: "smooth" })
       }
@@ -70,6 +71,7 @@ setCategory={setCategory} >
   removeFromCart={removeFromCart}
   shoppingCart={shoppingCart}
   GetQuantity={GetQuantity}
+  setShoppingCart={setShoppingCart}
 
 
   />

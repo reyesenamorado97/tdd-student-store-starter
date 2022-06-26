@@ -9,7 +9,8 @@ export default function ProductGrid({
     removeFromCart,
     quantity,
     shoppingCart,
-    GetQuantity
+    GetQuantity,
+    setShoppingCart
 
 
 }) {
@@ -24,7 +25,9 @@ export default function ProductGrid({
 
                 <div className="grid">
 
-                     { finalProductsArray = products.filter((product) => {
+                    
+                     {products &&
+                     (finalProductsArray = products.filter((product) => {
                          if (category == "food" && product.category == "food") {
                             return product
                         }
@@ -57,8 +60,9 @@ export default function ProductGrid({
         
                     ).map((product) => {
 
-
+if (products) {
                         return(
+                            
                             <ProductCard
                                 product={product}
                                 key={product.id}
@@ -67,21 +71,25 @@ export default function ProductGrid({
                                 removeFromCart={removeFromCart}
                                 shoppingCart={shoppingCart}
                                 GetQuantity={GetQuantity}
+                                setShoppingCart={setShoppingCart}
 
                             />
 
 
-                        )
+                        )}
+                        
                        })   
                                     
+    )
                   }
 
-                { !finalProductsArray.length ? (
+                {products &&
+                ( !finalProductsArray.length ? (
                     <div className="no-results">
                          <p>No products available!</p>
                     </div>
-                ) : ``}
-                  
+                ) : ``)
+                }
                 </div>
             </div>
         </div>

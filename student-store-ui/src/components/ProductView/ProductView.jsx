@@ -1,36 +1,39 @@
 import {useParams} from "react-router-dom";
 import {useEffect, useState} from "react"
 import "./ProductView.css"
+import axios from "axios";
 
 
 import "./ProductView.css";
-import axios from "axios";
 
 export default function ProductView(
-    quantity,
+    handleAddItemToCart,
     handleRemoveItemFromCart,
-    shoppingCart,
-    handleAddItemToCart
-    ) {
-        const [isFetching, setIsFetching] = useState(false)
-        const [error, setError] = useState("Error!")
-
-    const {productID} = useParams()
-    const [product, setProduct] = useState({})
-
-    useEffect(() => {
-        setIsFetching(true)
-            axios.get("https://codepath-store-api.herokuapp.com/store/" + productID)
+    shoppingCart ,
+    GetQuantity,
+   // product
     
-          .then((response) => {
-              setProduct(response.data.product)
-          })
-          .catch((error)=>{
-            setError(error)
-            console.log(error)
-          })
-          setIsFetching(false)
-      },[])
+    ) {
+       
+    const {productID} = useParams()
+    const [isFetching, setIsFetching] = useState(false)
+    const [error, setError] = useState("Error!")
+
+const [product, setProduct] = useState({})
+    
+useEffect(() => {
+        axios.get("http://localhost:3001/store/" + productID)
+
+      .then((response) => {
+          setProduct(response.data.product)
+      })
+      
+      .catch((error)=>{
+        setError(error)
+        console.log(error)
+      })
+      setIsFetching(false)
+  },[])
 
       function setPricingDisplay(price) {
         let dollarCount = price 
@@ -38,9 +41,22 @@ export default function ProductView(
         return `$${parseFloat(dollarCount).toFixed(2)}`
      }
 
+
+
+
+        if (shoppingCart){
+        shoppingCart.map((element) => {
+            if (element.itemId === productID)
+            {
+    currentID = element.itemId
+            quantity = element.quantity
+            }
+        })}
+
   return (
     <div>
       <div className="product-detail">
+          
         <div className="product-view">
             <h1 className="product-id">Product # {productID}</h1>
         </div>
@@ -63,13 +79,18 @@ export default function ProductView(
                     </div>
                     <div className="actions2">
                         <div className="buttons2">
-                            <button className="add2" onClick={() => handleAddItemToCart(productID)}>
-                                <i className="material-icons2" >add</i>
+                            <button className="add2">
+                                <i className="material-icons2"  onClick={() => {addToCart(productID); GetQuantity(productID)}} >add</i>
                             </button>
-                            <button className="remove2" onClick={() => handleRemoveItemFromCart(productID)}>
-                            <i className="material-icons2" >remove</i>
+                            <button className="remove2" >
+                            <i className="material-icons2"  onClick={() => {removeFromCart(productID); GetQuantity(productID)}}>remove</i>
                             </button>
 
+                            <span className="quantity">
+                                {productID &&
+                                     <span className="amt"> 0</span>
+                                }
+                </span>
                         </div>
 
                     </div>
