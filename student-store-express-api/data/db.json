@@ -555,6 +555,28 @@
           "quantity": 1
         }
       ]
+    },
+    {
+      "receiptID": 28,
+      "buyTime": "2022-06-27T03:09:53.281Z",
+      "user": {
+        "name": "cece",
+        "email": "mid@gmail.com"
+      },
+      "shoppingCart": [
+        {
+          "itemId": 7,
+          "quantity": 2
+        },
+        {
+          "itemId": 11,
+          "quantity": 2
+        },
+        {
+          "itemId": 12,
+          "quantity": 2
+        }
+      ]
     }
   ]
 }

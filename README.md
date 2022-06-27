@@ -4,34 +4,48 @@
 
 Selling merchandise in the modern era requires digital solutions. For this project, you'll be tasked with designing and constructing an online student store for the College of Codepath. The application entails a frontend user interface for potential customers to peruse the goods, and a backend API to handle data management. The API will be built with Node and Express and the UI will be built with React.
 
-Part 1 GIFs:
+Part 1:
 <br/>
 
 Routing for Navbar
-![](https://i.imgur.com/wHbG2FO.gif)
+
+![](https://i.imgur.com/0Cv4Vve.gif)
+<br/>
+
+
+Opening/Closing Side Bar & adding to cart
+![](https://i.imgur.com/LOEwV3n.gif)
 
 <br/>
 
-Opening/Closing Side Bar
-![](https://i.imgur.com/sxCmRwo.gif)
+Removing from Cart & Table of Products with Costs
+![](https://i.imgur.com/JCSZoRK.gif)
+
 
 <br/>
 
 Filter by Category
-![](https://i.imgur.com/gmT1Gk8.gif)
+![](https://i.imgur.com/jgN2DJp.gif)
 
 <br/>
 
 Filter through Search
-![](https://i.imgur.com/qI9cu9f.gif)
+![](https://i.imgur.com/rM3NEAY.gif)
 
 <br/>
 
 View Specific product on click (using routing)
-![](https://i.imgur.com/NEoFYSI.gif)
+![](https://i.imgur.com/MJDbffb.gif)
 
 <br/>
 
+Checking Out
+![](https://i.imgur.com/V6ljT1W.gif)
+
+<br/>
+
+Local API data on Insomnia
+![](https://i.imgur.com/I0BUxfu.gif)
 
 
 
@@ -52,8 +66,8 @@ View Specific product on click (using routing)
 
 #### Stretch Features
 
-- [x] User can click in the top navigation bar to scroll to the relevant section.
-- [x] User sees a "not found" display when searching for a nonexistent product.
+- [ ] User can click in the top navigation bar to scroll to the relevant section.
+- [ ] User sees a "not found" display when searching for a nonexistent product.
 - [ ] Create an endpoint for fetching all orders in the database, and an endpoint for serving an individual order based on its id.
 - [ ] Build a page in the UI that displays the list of all past orders and lets the user click on any individual order to take them to a more detailed page of the transaction.
 - [ ] Allow users to use an input to filter orders by the email of the person who placed the order.
@@ -310,8 +324,7 @@ The following specifications were met on the Express backend and the React front
 
 
 
-
-### Reflection
+Reflection
 Did the topics discussed in your labs prepare you to complete the assignment? Be specific, which features in your weekly assignment did you feel unprepared to complete?
 
     I feel that the topics in our labs helped to a degree.
