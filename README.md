@@ -337,6 +337,17 @@ Did the topics discussed in your labs prepare you to complete the assignment? Be
     or filtering by category. I had to figure out that I needed
     to map each object in that twice filtered array into
     my product card component.
+    
+    PART 2
+    The topics most definitely helped me complete this
+    project. I have a much better footing with react
+    and the backend. It was a serious learning
+    adventure but I am proud if the work I put
+    into to all assignments for this week. They
+    were tough but worth it. The code from the bank 
+    lab helped out so much. I would have been lost
+    with no idea where to start if it wasn't for that lab
+    specifically!
 
 If you had more time, what would you have done differently? Would you have added additional features? Changed the way your project responded to a particular event, etc.
 
@@ -349,6 +360,15 @@ If you had more time, what would you have done differently? Would you have added
     website design. I strongly modeled it after the example
     website because I didn't feel like I had the time
     to come up with my own unique design.
+    
+    PART 2
+    I wish I could have made some of the rendered components looked
+    prettier. The receipt is ugly and I do wish
+    I implemented the rest of the stretch features,
+    but I simply had to take care of life things 
+    ouver the weekend instead. I do feel like I have
+    the ability to complete them thanks to
+    the work done on the previous labs!
 
 Reflect on your project demo, what went well? Were there things that maybe didn't go as planned? Did you notice something that your peer did that you would like to try next time?
 
@@ -359,6 +379,14 @@ Reflect on your project demo, what went well? Were there things that maybe didn'
     my plan of attack on this project. Either way, I still
     feel confident enough to implement what I need to, I
     just hope time is on my side!
+    
+    PART 2 
+    I think I would have liked to show off the second to last
+    core feature off but I bugged my code before
+    and fixed it right after. I saw some did
+    the stretch features which is great!
+    I wish i had time to implement them as well.
+    I dont think they were very hard this time!
 
 Open-source libraries used
 Add any links to open-source libraries used in your project.
@@ -378,3 +406,10 @@ Give a shout out to somebody from your cohort that especially helped you during 
     for being excellent partners in this tough assignment. 
     They helped answer my question for the twitter assignment
     as well. I learned a lot from talking to them.
+    
+    PART 2
+    I would love to thank Kiara, Likashmi, Kevin,
+    and Maurice for being the best team I had so far
+    Kiara really helped me after my code for adding
+    and removing to cart was bugged beyond repair.
+    I give her serious credit for her take and assistance.
