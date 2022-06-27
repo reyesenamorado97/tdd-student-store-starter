@@ -65,7 +65,7 @@ return(
                         className="checkbox"
                         name="termsAndConditions" 
                         type="checkbox" 
-                        //onChange={}
+                        onChange={console.log("hi")}
                         />
                         <span>I agree to the &nbsp;
                          <a href="#terms-and-conditions">terms and conditions</a> 
@@ -79,7 +79,9 @@ return(
                 <div className="field2">
                   <div className="control4">
                     { shoppingCart.length != 0 &&
-                    <button className="checkout-button" onClick={handleOnSubmit}>Checkout</button>
+                    <button className="checkout-button" onClick={() => {
+                      handleOnSubmit();
+                      }}>Checkout</button>
                     }
                     { shoppingCart.length == 0 &&
                     <div className="is-danger"> No cart or items in cart found to checkout</div>

@@ -16,7 +16,8 @@ export default function ShoppingCart({
     handleOnSubmit,
     checkoutForm,
     handleOnCheckoutFormChange,
-    submitted
+    submitted,
+    receipt,
   })
   {  
 
@@ -64,7 +65,6 @@ export default function ShoppingCart({
     }
 
     if (shoppingCart != undefined){
-      console.log("Purchased stuff..." + purchasedCart);
     }
 
     var clicked = false
@@ -74,7 +74,6 @@ export default function ShoppingCart({
     
 
         for(let i = 0; i< shoppingCart.length; i++){
-         console.log (shoppingCart[i].itemId  )
             subtotal += (shoppingCart[i].quantity * products[shoppingCart[i].itemId-1].price) 
         }
 
@@ -121,7 +120,6 @@ return (
                    </div>
 
                    {shoppingCart.map((item, key) => {
-                       console.log(item.itemId)
                      return (
                          <div key={key} className="product-row">
 
@@ -206,8 +204,6 @@ return (
   handleOnSubmit={handleOnSubmit}
   isEmpty={isEmpty}
   >
-
-
   </CheckoutForm>
                 
   
@@ -243,16 +239,63 @@ return (
   
                 }
 
-                {isOpen && submitted == 1 &&
+                {isOpen && submitted == 1 &&  (
                                 <div className="success">
-                                 Success! Thank you for your submission.
+                                 Success! Thank you for your purchase. &nbsp;
+                                  {receipt &&
+                                  receipt?.purchases?.user?.name 
+                                  }
+                                <br /><br />
+
+                                Here is you receipt------------------------------------
+                                <br /><br />
+                                Name&nbsp;. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  &nbsp;
+                                {receipt &&
+                                  receipt.purchases?.user?.name 
+                                  }
+                                <br />
+
+                                   Email&nbsp;. . . . . . . . . . . . . . . . .  &nbsp;
+                                {receipt &&
+                                  receipt.purchases?.user?.email 
+                                  }
+                                <br />
+                                Purchase ID &nbsp;. . .  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  &nbsp;
+                                {receipt &&
+                                  receipt.purchases?.receiptID 
+                                  }
+                                <br />
+                                Time of Purchase &nbsp;. . . . .  . . . &nbsp;
+                                {receipt &&
+                                  receipt.purchases?.buyTime 
+                                  }
+                                   <br />
+                                   <br />
+                                   --------------------------------ITEMS--------------------------------
+                                   <br />
+                                   <br />
+
+
+
+
+                                 <>{receipt.purchases?.shoppingCart.map((item) => (
+                                  <>{products[item?.itemId-1]?.name}. . . . . . . . . . . . . . . .&nbsp;{item?.itemId}&nbsp;x&nbsp;{item?.quantity}<br/></>                                ))}</>
+                                  
+                                   <br />
+                                <br />
+                                
+                               
                                 </div>
 
+                                
+                )
                 }
 
                 {isOpen && submitted == -1 &&
                                 <div className="error">
                                  Failure! Please enter both a name and email!
+
+
                                 </div>
 
                 }

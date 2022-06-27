@@ -28,6 +28,7 @@ export default function App() {
   const [category, setCategory] = useState("all")
   const [isEmpty, setIsEmpty] = useState(false)
   const [submitted, setSubmitted] = useState(0)
+  const [receipt, setReceipt] = useState({})
 
 
 
@@ -57,7 +58,6 @@ export default function App() {
 
   const handleOnCheckoutFormChange = (event) => {
     setCheckoutForm({...checkoutForm, [event.target.name]: event.target.value})
-    console.log(checkoutForm)
   }
   
   const handleOnSubmit = () => {
@@ -70,11 +70,13 @@ export default function App() {
     axios.post("http://localhost:3001/store", {user: checkoutForm, shoppingCart })
     .then((response) => {setCheckoutForm(checkoutForm)
       setSubmitted(1)
+
+      setReceipt(response.data);
+
     
     })
 .catch((error)=>{setError(error)
   setSubmitted(-1)
-  console.log(submitted)
 
 })
 setCheckoutForm({
@@ -197,6 +199,7 @@ function handleRemoveItemFromCart (productId) {
                     checkoutForm={checkoutForm}
                     handleOnSubmit={handleOnSubmit}
                     submitted={submitted}
+                    receipt={receipt}
 
                 />
 
@@ -242,6 +245,9 @@ function handleRemoveItemFromCart (productId) {
                     checkoutForm={checkoutForm}
                     handleOnSubmit={handleOnSubmit}
                     submitted={submitted}
+                    receipt={receipt}
+
+
 
 
                     />

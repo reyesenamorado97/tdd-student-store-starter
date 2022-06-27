@@ -148,9 +148,9 @@
   "purchases": [
     {
       "receiptID": 1,
-      "buyTime": "2022-06-26T18:07:23.073Z",
+      "buyTime": "2022-06-27T00:45:09.973Z",
       "user": {
-        "name": "",
+        "name": "Kevin Reyes",
         "email": "reyesenamorado97@gmail.com"
       },
       "shoppingCart": [
@@ -162,10 +162,10 @@
     },
     {
       "receiptID": 2,
-      "buyTime": "2022-06-26T18:07:40.125Z",
+      "buyTime": "2022-06-27T00:47:14.885Z",
       "user": {
-        "name": "",
-        "email": "kjlk"
+        "name": "Adrianna Valentin",
+        "email": "reyesenamorado97@gmail.com"
       },
       "shoppingCart": [
         {
@@ -176,18 +176,382 @@
     },
     {
       "receiptID": 3,
-      "buyTime": "2022-06-26T18:33:45.064Z",
+      "buyTime": "2022-06-27T00:49:59.934Z",
       "user": {
         "name": "Robert Reyes-Enamorado",
-        "email": "reyeskevin3005@gmail.com"
+        "email": "reyesenamorado97@gmail.com"
       },
       "shoppingCart": [
+        {
+          "itemId": 1,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "receiptID": 4,
+      "buyTime": "2022-06-27T00:49:59.939Z",
+      "user": {
+        "name": "Robert Reyes-Enamorado",
+        "email": "reyesenamorado97@gmail.com"
+      },
+      "shoppingCart": [
+        {
+          "itemId": 1,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "receiptID": 5,
+      "buyTime": "2022-06-27T00:52:20.498Z",
+      "user": {
+        "name": "Adrianna Valentin",
+        "email": "rareyese@buffalo.edu"
+      },
+      "shoppingCart": [
+        {
+          "itemId": 1,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "receiptID": 6,
+      "buyTime": "2022-06-27T00:52:56.931Z",
+      "user": {
+        "name": "Robert Reyes-Enamorado",
+        "email": "reyesenamorado97@gmail.com"
+      },
+      "shoppingCart": [
+        {
+          "itemId": 1,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "receiptID": 7,
+      "buyTime": "2022-06-27T00:53:36.749Z",
+      "user": {
+        "name": "Robert Reyes-Enamorado",
+        "email": "imtfy.xo@gmail.com"
+      },
+      "shoppingCart": [
+        {
+          "itemId": 1,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "receiptID": 8,
+      "buyTime": "2022-06-27T00:57:54.823Z",
+      "user": {
+        "name": "Adrianna Valentin",
+        "email": "reyesenamorado@gmail.com"
+      },
+      "shoppingCart": [
+        {
+          "itemId": 1,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "receiptID": 9,
+      "buyTime": "2022-06-27T00:58:22.552Z",
+      "user": {
+        "name": "blol",
+        "email": "reyesenamorado@gmail.com"
+      },
+      "shoppingCart": [
+        {
+          "itemId": 1,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "receiptID": 10,
+      "buyTime": "2022-06-27T00:58:40.886Z",
+      "user": {
+        "name": "Kevin Reyes",
+        "email": "rareyese@buffalo.edu"
+      },
+      "shoppingCart": [
+        {
+          "itemId": 1,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "receiptID": 11,
+      "buyTime": "2022-06-27T00:59:09.338Z",
+      "user": {
+        "name": "Kevin Reyes",
+        "email": "rareyese@buffalo.edu"
+      },
+      "shoppingCart": [
+        {
+          "itemId": 1,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "receiptID": 12,
+      "buyTime": "2022-06-27T00:59:25.918Z",
+      "user": {
+        "name": "Robert Reyes-Enamorado",
+        "email": "reyesenamorado97@gmail.com"
+      },
+      "shoppingCart": [
+        {
+          "itemId": 1,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "receiptID": 13,
+      "buyTime": "2022-06-27T01:01:17.711Z",
+      "user": {
+        "name": "blol",
+        "email": "reyesenamorado@gmail.com"
+      },
+      "shoppingCart": [
+        {
+          "itemId": 1,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "receiptID": 14,
+      "buyTime": "2022-06-27T01:04:44.457Z",
+      "user": {
+        "name": "Kevin Reyes",
+        "email": "reyesenamorado@gmail.com"
+      },
+      "shoppingCart": [
+        {
+          "itemId": 1,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "receiptID": 15,
+      "buyTime": "2022-06-27T01:05:17.258Z",
+      "user": {
+        "name": "Kevin Reyes",
+        "email": "rareyese@buffalo.edu"
+      },
+      "shoppingCart": [
+        {
+          "itemId": 1,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "receiptID": 16,
+      "buyTime": "2022-06-27T01:10:42.197Z",
+      "user": {
+        "name": "Kevin Reyes",
+        "email": "rareyese@buffalo.edu"
+      },
+      "shoppingCart": [
+        {
+          "itemId": 1,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "receiptID": 17,
+      "buyTime": "2022-06-27T01:11:26.573Z",
+      "user": {
+        "name": "blol",
+        "email": "reyesenamorado@gmail.com"
+      },
+      "shoppingCart": [
+        {
+          "itemId": 1,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "receiptID": 18,
+      "buyTime": "2022-06-27T01:12:00.777Z",
+      "user": {
+        "name": "blol",
+        "email": "rareyese@buffalo.edu"
+      },
+      "shoppingCart": [
+        {
+          "itemId": 1,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "receiptID": 19,
+      "buyTime": "2022-06-27T01:17:12.249Z",
+      "user": {
+        "name": "Adrianna Valentin",
+        "email": "reyesenamorado97@gmail.com"
+      },
+      "shoppingCart": [
+        {
+          "itemId": 1,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "receiptID": 20,
+      "buyTime": "2022-06-27T01:18:15.203Z",
+      "user": {
+        "name": "Kevin Reyes",
+        "email": "reyesenamorado@gmail.com"
+      },
+      "shoppingCart": [
+        {
+          "itemId": 1,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "receiptID": 21,
+      "buyTime": "2022-06-27T01:27:37.201Z",
+      "user": {
+        "name": "blol",
+        "email": "rareyese@buffalo.edu"
+      },
+      "shoppingCart": [
+        {
+          "itemId": 1,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "receiptID": 22,
+      "buyTime": "2022-06-27T01:27:53.625Z",
+      "user": {
+        "name": "blol",
+        "email": "rareyese@buffalo.edu"
+      },
+      "shoppingCart": [
+        {
+          "itemId": 1,
+          "quantity": 1
+        },
         {
           "itemId": 2,
           "quantity": 1
         },
         {
+          "itemId": 4,
+          "quantity": 1
+        },
+        {
           "itemId": 3,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "receiptID": 23,
+      "buyTime": "2022-06-27T01:31:45.611Z",
+      "user": {
+        "name": "Kevin Reyes",
+        "email": "rareyese@buffalo.edu"
+      },
+      "shoppingCart": [
+        {
+          "itemId": 1,
+          "quantity": 1
+        },
+        {
+          "itemId": 3,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "receiptID": 24,
+      "buyTime": "2022-06-27T01:32:05.892Z",
+      "user": {
+        "name": "Kevin Reyes",
+        "email": "reyesenamorado97@gmail.com"
+      },
+      "shoppingCart": [
+        {
+          "itemId": 1,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "receiptID": 25,
+      "buyTime": "2022-06-27T01:33:59.731Z",
+      "user": {
+        "name": "Kevin Reyes",
+        "email": "rareyese@buffalo.edu"
+      },
+      "shoppingCart": [
+        {
+          "itemId": 1,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "receiptID": 26,
+      "buyTime": "2022-06-27T01:36:03.245Z",
+      "user": {
+        "name": "Kevin Reyes",
+        "email": "rareyese@buffalo.edu"
+      },
+      "shoppingCart": [
+        {
+          "itemId": 3,
+          "quantity": 1
+        },
+        {
+          "itemId": 4,
+          "quantity": 1
+        },
+        {
+          "itemId": 2,
+          "quantity": 1
+        },
+        {
+          "itemId": 1,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "receiptID": 27,
+      "buyTime": "2022-06-27T01:45:15.413Z",
+      "user": {
+        "name": "Robert Reyes-Enamorado",
+        "email": "reyesenamorado97@gmail.com"
+      },
+      "shoppingCart": [
+        {
+          "itemId": 3,
+          "quantity": 1
+        },
+        {
+          "itemId": 4,
           "quantity": 1
         }
       ]

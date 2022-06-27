@@ -4,7 +4,6 @@ import Logo from "../../assets/logo.webp";
 import {Link} from "react-router-dom";
 
 export default function Navbar() {
-  console.log("loaded")
   return (
     <nav className="navbar">
             

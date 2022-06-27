@@ -16,7 +16,9 @@ export default function Sidebar({
   handleOnCheckoutFormChange,
   checkoutForm,
   handleOnSubmit,
-  submitted
+  submitted,
+  receipt,
+  
 
 
   
@@ -24,7 +26,7 @@ export default function Sidebar({
 
 {  
 
-  
+  console.log(receipt)
   return (
     <section className={`sidebar ${isOpen ? 'open' : 'closed'}`}>
 
@@ -54,9 +56,9 @@ export default function Sidebar({
           handleOnCheckoutFormChange={handleOnCheckoutFormChange}
           checkoutForm={checkoutForm}
           submitted={submitted}
+          receipt={receipt}
 
 
-          
           
           >
           </ShoppingCart>
